@@ -1,5 +1,5 @@
-﻿# Course Syllabus: INFO 6150 - Boston
-# Fall Semester 2022 - Thursdays
+﻿# Course Syllabus: INFO 6150 - Seattle
+# Fall Semester 2022 - Fridays
 Instructor: Brett Ritter `<b.ritter@neu.edu>`
 
 This course covers the essentials of front-end web development in terms of User Interaction/User Experience (UI/UX).  This will NOT teach you to be a designer, but will give you the building blocks to work with designers (or decide you want to learn more about Human/Computer Interaction (HCI).  It will also not teach you all the steps to perform full web development (see INFO6250 for that) but will give you the basis to be effective at UI/UX design and implementation for web development.
@@ -41,11 +41,11 @@ Some of what we cover
 ## Expected Class Schedule (subject to change):
 
 ### Section 1: Rendering Fundamentals
-Thu Sep 8,
-Thu Sep 15,
-Thu Sep 22,
-Thu Sep 29,
-Thu Oct 6,
+Fri Sep 9,
+Fri Sep 16,
+Fri Sep 23,
+Fri Sep 30,
+Fri Oct 7,
 
 - The roles of HTML/CSS/JS
 - Navigation between pages and sites
@@ -59,13 +59,13 @@ Thu Oct 6,
 
 #### Project Due: HTML and CSS
 
-Wed Oct 12, 11:59pm ET
+Thu Oct 13, 11:59pm ET
 
 ### Section 2: Browser Javascript
 
-Thu Oct 13, 
-Thu Oct 20,
-Thu Oct 27,
+Fri Oct 14, 
+Fri Oct 21,
+Fri Oct 28,
 
 - Browser JS Intro
 - Validation
@@ -74,14 +74,16 @@ Thu Oct 27,
 
 #### Project Due: Javascript
 
-Wed Nov 2, 11:59pm ET (Due Date may change!)
+Thu Nov 3, 11:59pm ET (Due Date may change!)
 
 ### Section 3: React Intro
 
-Thu Nov 3, 
-Thu Nov 10,
-Thu Nov 17, 
-NOT Thu Nov 24 (Holiday)
+Fri Nov 4, 
+Thu Nov 11,
+Thu Nov 18, 
+NOT Fri Nov 25 (Holiday)
+Fri Dec 2,
+Fri Dec 9
 
 - Intro to React
 - Deeplinking
@@ -90,5 +92,5 @@ NOT Thu Nov 24 (Holiday)
 ### Final Projects Due 
 Sun Dec 11, 11:59pm ET
 
-No class Thu Dec 15 (just Project due on Sun Dec 11)
+No class Fri Dec 16 (just Project due on Sun Dec 11)
 

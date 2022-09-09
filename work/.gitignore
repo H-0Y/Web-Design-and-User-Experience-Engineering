@@ -8,3 +8,5 @@
 # it is created when we run `npm install`
 node_modules
 
+# Omitting this because students aren't writing for node
+package-lock.json

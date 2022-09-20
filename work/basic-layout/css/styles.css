@@ -1,0 +1,94 @@
+body{
+    background-color:white;
+}
+
+#homepage{
+    margin: 40px;
+    padding: 0px;
+    max-width: 1530px;
+    max-height: 500px;
+    height: 350px;
+    
+    display: grid;
+    grid-template-columns: 2fr 7.6fr;
+    grid-template-rows: 2fr 5fr 15%; 
+    grid-template-areas: 
+    "header header"
+    "local-menu main"
+    'footer footer';
+    font-family: "Times New Roman";
+    font-weight:bold;
+    font-size: large;
+}
+header{
+    grid-area: header;
+    background-color: plum;
+}
+
+.menu{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.menu li{
+    list-style-type:none;
+    display: inline;
+    font-weight:bold;
+   
+}
+
+.local-menu{
+    grid-area: local-menu;
+    background-color: pink;
+    border-right: 1px solid black;
+}
+
+.local-menu ul{
+    list-style-type:none;
+    font-weight:bold;
+   
+}
+
+.local-menu ul li {
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+main{
+    grid-area: main;
+    background-color: pink;
+    padding: 10px;
+}
+main > p {
+    font-weight:bold;
+}
+footer{
+    grid-area: footer;
+    background-color: plum;
+    font-weight:bold;
+    padding-left: 1em;
+    padding-top: 14px;
+}
+ul.menu a {
+    padding: 18px 20px;
+}
+.local-menu a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    padding-left: 10px;
+    
+}
+ul.menu a:hover {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+  
+  /* mouse over link */
+.local-menu a:hover {
+    background-color: plum;
+  }
+  
+ 

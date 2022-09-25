@@ -32,9 +32,16 @@ header{
 }
 .menu li{
     list-style-type:none;
-    display: inline;
+    display: inline-block;
     font-weight:bold;
    
+}
+ul.menu a {
+    padding: 18px 20px;
+}
+ul.menu a:hover {
+    background-color: rebeccapurple;
+    color: white;
 }
 
 .local-menu{
@@ -46,7 +53,10 @@ header{
 .local-menu ul{
     list-style-type:none;
     font-weight:bold;
-   
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    padding-right: 0;
 }
 
 .local-menu ul li {
@@ -55,6 +65,20 @@ header{
     padding-bottom: 5px;
     
 }
+
+.local-menu a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    padding-left: 10px;
+    
+}
+
+  /* mouse over link */
+.local-menu a:hover {
+    background-color: plum;
+  }
+  
 main{
     grid-area: main;
     background-color: pink;
@@ -70,25 +94,7 @@ footer{
     padding-left: 1em;
     padding-top: 14px;
 }
-ul.menu a {
-    padding: 18px 20px;
-}
-.local-menu a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: block;
-    padding-left: 10px;
-    
-}
-ul.menu a:hover {
-    background-color: rebeccapurple;
-    color: white;
-}
 
-  
-  /* mouse over link */
-.local-menu a:hover {
-    background-color: plum;
-  }
+
   
  

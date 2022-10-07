@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    background-color: papayawhip;
+}
+
+
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+header img{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 10rem;
+    width: min(20%,18rem);
+}
+header h1{
+    text-align: center;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    
+    width: 95%;
+    margin: 2%;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 2rem;
+    background-color: lightgoldenrodyellow;
+}
+nav a {
+    padding: 1.2rem 0rem;
+    width: 100%;
+     
+    text-decoration: none;
+}
+nav a:hover{
+    color: whitesmoke;
+    border-radius: 2rem;
+    background-color: darkorange;
+}
+
+.mainbody{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+h2{
+    grid-column: span 12;
+}
+
+
+.card{
+    margin: 5%;
+    grid-column: 3/11;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 2rem;
+    border-radius: 2rem;
+    background-color: lightgoldenrodyellow;
+    
+    font-weight: bold;
+    font-size: large;
+}
+.card:hover{
+    box-shadow: 5px 5px 5px 5px lightgray;
+}
+.card h2{
+    flex: 1;
+}
+.card img{
+    
+    border-radius: 2rem;
+    flex: 5;
+    aspect-ratio: 4/5;
+    
+    width: 90%;
+}
+.card p{
+    flex: 2;
+    margin: 1rem;
+}
+.card a{
+    height: 1.5rem;
+    width: 8rem;
+    align-self: center;
+    padding: 1rem;
+    background-color: rgb(9, 109, 172);
+    color: yellow;
+    border-radius: 1rem;
+    text-decoration: none;
+    
+}
+.card a:hover{
+    background-color: rgb(201, 13, 22);
+    color: white;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    width: 95%;
+    
+    margin: 2%;
+    
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background-color: gold;
+}
+footer .link {
+    grid-column: span 12;
+    font-size: medium;
+    padding: 0.5rem 0rem;
+}
+footer a{
+    
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+footer a:hover{
+    border-radius: 2rem;
+    color: whitesmoke;
+    background-color: darkorange;
+    
+}
+
+@media (min-width: 800px){
+    nav{
+        flex-direction: row;
+    }
+    h2{
+        grid-column: span 12;
+    }
+    .card{
+        grid-column: span 6;
+    }
+    footer .link {
+        grid-column: span 4;
+    }
+}
+
+@media (min-width: 1250px){
+    nav{
+        flex-direction: row;
+    }
+    h2{
+        grid-column: span 12;
+    }
+    .card{
+        grid-column: span 3;
+    }
+    footer .link {
+        grid-column: span 4;
+    }
+}

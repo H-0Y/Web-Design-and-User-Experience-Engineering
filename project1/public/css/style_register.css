@@ -149,7 +149,9 @@ footer{
     padding-top: 14px;
     text-align: center;
 }
-
+p {
+    text-align: center;
+}
 
 @media (min-width: 1000px){
     form{

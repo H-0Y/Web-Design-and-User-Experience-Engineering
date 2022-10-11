@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1{
+    text-align: center;
+    width: 100%;
+    height: 5rem;
+}
+h2{
+    margin-left: 2rem;
+}
+p{
+    margin: 2rem;
+    font-size: large;
+    font-weight: bolder;
+
+}
+
+main form dev{
+    height: 20rem;
+    display: flex;
+
+    margin: 0% 5%;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    
+    background-color: lightgoldenrodyellow;
+    font-size: large;
+    font-weight: bolder;
+}
+.col1{
+    height: 15rem;
+}
+span{
+    color: red;
+}
+input{
+    padding: 0.5rem;
+    
+    width: 54%
+}
+#annoy_me{
+    width: auto;
+}
+
+select{
+    padding: 0.5rem;
+}
+select:hover, select:focus-within{
+    color: royalblue;
+}
+.submit{
+    width: 100%;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    width: auto;
+    background-color: palevioletred;
+}
+.submit:focus{
+    background-color: goldenrod;
+}
+.submit:hover{
+    background-color: gold;
+}
+footer{
+    margin-top: 4rem;
+    justify-self: end;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+footer a{
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color: goldenrod;
+}
+footer a:hover{
+    color: white;
+    background-color: purple;
+}
+
+@media (min-width: 1000px){
+    form{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    }
+    dev{
+        grid-column: span 6;
+    }
+    .col1{
+        height: auto;
+    }
+}

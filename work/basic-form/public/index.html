@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>2022 FALL INFO 6150 Work: Basic-Form</h1>
+    
+        <h2>Your Platform</h2>
+    <p>At Activision Blizzard we are dedicated to creating the most epic entertainment experiences, driven by our company values and passion, Activision Blizzard creates worlds with the focus to entertain the universe. We are looking for talented and innovative students to join our team for the summer of 2023. All interns will receive a meaningful project and an unparalleled experience. 
+        We will provide the tools and resources you need to learn. The challenging and creative work you do throughout your internship will directly impact the team you are contributing to.  
+        Interns will be given the choice to work remotely or relocate to the internship location. The company will cover relocation services and will provide a living student to supplement housing, utility, and office supply costs. 
+    </p>
+    <main>
+        <form name="input" action="/submit" method="post">
+            
+            <dev class="col1"> 
+                <label for="username">Username<span>*</span>: 
+                    <input type="text" name="username" id="username" placeholder="required">
+                </label>
+                
+                <label for="email">E-mail<span>*</span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="email" id="email" placeholder="required">
+                </label>
+            </dev>
+           
+            <dev class="col2">
+                <label for=""tier"> Tier<span>*</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="tier" id="tier">
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                        <option selected>Please select (required)</option>
+                    </select>
+                </label>
+    
+                <label for="annoy_me">Do you want us to send you annoying emails?
+                    <input type="checkbox" name="annoy_me" id="annoy_me" checked> 
+                </label>
+                <input class="submit" type="submit" value="Register">
+            </dev>
+            
+
+            
+            
+            
+        </form>
+    </main>
+
+    <footer>
+        <a href="#">Privacy Policy</a>
+    </footer>
+</body>
+</html>

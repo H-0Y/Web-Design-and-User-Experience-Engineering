@@ -31,21 +31,22 @@
     <div class="main-footer"> 
         <main>
             <h2> Come and join us !!!</h2>
+            <p>(Tip: All fields marked with * are required)</p>
             <form name="input" action="/register" method="post">
                 
                 <dev class="col1"> 
                     <label for="username">Username<span>*</span>: 
-                        <input type="text" name="username" id="username" placeholder="required">
+                        <input type="text" name="username" id="username" placeholder="required" required>
                     </label>
                     
                     <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail<span>*</span>: 
-                        <input type="email" name="email" id="email" placeholder="required"> 
+                        <input type="email" name="email" id="email" placeholder="required" required> 
                     </label>
                 </dev>
                
                 <dev class="col2">
                     <label for=""tier"> Country<span>*</span>: 
-                        <select name="tier" id="tier">
+                        <select name="tier" id="tier" required>
                             <option value="1">United States</option>
                             <option value="2">China</option>
                             <option value="3">Others</option>

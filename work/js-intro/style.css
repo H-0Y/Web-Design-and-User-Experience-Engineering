@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    background-color: #FF5714;
+}
+
+header{
+    grid-column: span 12;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+header img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    border-radius: 10rem;
+    width: 12rem;
+    height: 14rem;
+}
+header h1{
+    text-align: center;
+    width: 100%;
+}
+
+
+button {
+    position: relative;
+    border: none;
+    background-color: #FF5714;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 3rem;
+}
+
+ul {
+    margin: 0;
+    position: absolute;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-left: 0rem;
+    
+    background-color: #FF5714;
+    
+    list-style: none;
+    overflow: hidden;
+
+    transform: rotateX(90deg);
+    transform-origin: top;
+
+    transition-duration: 1s;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    opacity: 0;
+    transition: opacity .1s ease .3s;
+}
+/* not use hover and focus-within version */
+.open.active ul {
+    transform: rotateX(0deg);
+}
+
+.open.active ul li {
+    opacity: 1;
+}
+
+/* hover and focus-within version */
+
+/* nav.active:hover ul,
+button.active:focus-within ul {
+    transform: rotateX(0deg);
+}
+nav.active:hover ul li,
+button.active:focus-within ul li {
+    opacity: 1;
+} */
+
+main{
+    grid-column: span 12;
+    background-color: #6D8A96;
+}
+
+.mainbody{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    
+}
+
+h2{
+    grid-column: span 12;
+}
+
+
+.card{
+    margin: 5%;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: large;
+}
+.card:hover{
+    box-shadow: 5px 5px 5px 5px lightgray;
+}
+.card h3 {
+    padding: 0 0.1rem;
+    flex: 1.5;
+}
+.card img{
+    
+    border-radius: 2rem;
+    flex: 5;
+    aspect-ratio: 4/5;
+    
+    width: 90%;
+}
+.card p{
+    flex: 2;
+    margin: 1rem;
+}
+.card a{
+    height: 1.5rem;
+    width: 8rem;
+    align-self: center;
+    padding: 1rem;
+    background-color: rgb(9, 109, 172);
+    color: yellow;
+    border-radius: 1rem;
+    text-decoration: none;
+    
+}
+.card a:hover{
+    background-color: rgb(201, 13, 22);
+    color: white;
+}
+.card1 {
+    background-color: #DADDD8; 
+ }
+.card2 {
+     background-color: #ECEBE4;
+ }
+ .card3 {
+     background-color: #EEF0F2;
+ }
+
+
+footer{
+    grid-column: span 12;
+    padding: 1rem;
+    background-color: #FF5714;
+    font-weight:bold;
+    padding-left: 1em;
+    padding-top: 14px;
+}
+@media (max-width: 800px){
+    .card{
+        grid-column: 3/11;
+    }
+}

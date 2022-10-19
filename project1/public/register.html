@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_register.css"/>
+    <title>Pandas Register</title>
+</head>
+<body>
+        
+        <div class="container">
+        <header>
+            <div class="left-header">
+                <a href="index.html"><img class="logo" src="images/logo.jpg" alt=""></a>
+                <nav>
+                    <button type="button">Navigation</button>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Pandas</a></li>
+                            <li><a href="register.html">Register</a></li>
+                        </ul>
+                </nav>
+            </div>
+            <h1>
+                Pandas Register
+            </h1>
+            </div>
+        </header>
+    
+    <div class="main-footer"> 
+        <main>
+            <h2> Come and join us !!!</h2>
+            <p>(Tip: All fields marked with * are required)</p>
+            <form name="input" action="/register" method="post">
+                
+                <dev class="col1"> 
+                    <label for="username">Username<span>*</span>: 
+                        <input type="text" name="username" id="username" placeholder="required" required>
+                    </label>
+                    
+                    <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail<span>*</span>: 
+                        <input type="email" name="email" id="email" placeholder="required" required> 
+                    </label>
+                </dev>
+               
+                <dev class="col2">
+                    <label for=""tier"> Country<span>*</span>: 
+                        <select name="tier" id="tier" required>
+                            <option value="1">United States</option>
+                            <option value="2">China</option>
+                            <option value="3">Others</option>
+                            <option selected>Please select (required)</option>
+                        </select>
+                    </label>
+        
+                    <label for="want">Do you want to receive more information about pandas by e-mail?
+                        <input class="checkbox" type="checkbox"  name="want" id="want" checked> 
+                    </label>
+                    <input class="submit" type="submit" value="Register">
+                </dev>
+                
+    
+                
+                
+                
+            </form>
+        </main>
+    
+        <footer>
+            <a href="#">Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+</html>

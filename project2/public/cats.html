@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cats_style.css"/>
+    <title>Famous Cats</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" aria-label="a logo and also a link to homepage"><img class="logo" src="http://placekitten.com/200/200" alt="a logo where a cat is stretching itself"></a>
+        
+        <a href="#main" class="skip-link" aria-label="a link to skip to main contents">Skip to the content</a>
+        <h1 aria-label="header written as Famous Internet Cats">Famous Internet Cats</h1>
+        
+        <menu class="menu">
+            <a href="#" class="menu-link" aria-label="a menu including 3 options"><i class="gg-menu"></i></a>
+            <ul class="menu-ul">
+                <li class="menu-li"><a href="index.html" aria-label="a link to home page">Home</a></li>
+                <li class="menu-li"><a href="cats.html" aria-label="a link to famous cates page">Famous Cats</a></li>
+                <li class="menu-li"><a href="#" aria-label="a link to cats event page">Cats Event</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <nav>
+        <a href="index.html" aria-label="a link to home page">Home</a>
+        <a href="cats.html" aria-label="a link to famous cates page">Famous Cats</a>
+        <a href="#" aria-label="a link to cats event page">Cats Event</a>
+    </nav>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h2>Subscribe to the Latest Mews!</h2>
+            <form class="subscribe" action="/subscribe" method="post">
+                
+                <div class="subscribe-email">
+                    <label for="email">E-mail: *reqiured</label>
+                    <input class="subscribe-email-input" type="text" name="email" id="email">
+                    <span class="subscribe-email__error"></span>
+                </div>    
+    
+                <div class="subscribe-confirm">
+                    <label for="confirm-email">Confirm E-mail: *reqiured</label>
+                    
+                    <input class="subscribe-confirm-input" type="text" name="confirm-email" id="confirm-email">
+                    <span class="subscribe-confirm__error"></span>
+                </div>
+
+                <div class="form-button"> 
+                    <input class="subscribe-submit" type="submit" value="Subscribe">
+                    <div class="close">Cancel</div>
+                </div>
+
+            </form>
+            
+        
+        
+        </div>
+  
+    </div>
+
+    <main>
+        <div class="cards">
+            <div class="card">
+                <h2>Tabby Cat</h2>
+                <img src="http://placekitten.com/400/502" alt="This is a Tabby cat who is waching you.">
+                <div class="description">
+                    <p>
+                        This is a Tabby cat who is waching you. 
+                    </p>
+                    <p>
+                        Asdsd, uahsfn, jausdhfnds. ASIfkasfn oifnjsdnf, <a href="#" class="subscribe-link">Subscribe</a> asfn,asdjjjdah sf  aisjf i iasfu, ionau, uihausf.
+                    </p>
+                </div>
+                
+                
+            </div>
+            <div class="card">
+                <h2>Cute Cat</h2>
+                <img src="http://placekitten.com/400/501" alt="This is a cute a cat who is lying on the floor.">
+                <div class="description">
+                    <p>
+                        This is a cute a cat who is lying on the floor.
+                    </p>
+                    <p>Reasonably resizing text/zooming does not cause your display to become difficult to use.</p>
+                    <p>All forms, menus, buttons, and links <a href="#" class="subscribe-link">Subscribe</a> must be usable with keyboard as well as mouse.</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <h2>Four Cats</h2>
+                <img src="http://placekitten.com/400/499" alt="These are four cats with various fur colors.">
+                <div class="description"> 
+                    <p>
+                        These are four cats with various fur colors.
+                    </p>
+                    <p>The hamburger icon can be reached via keyboard, <a href="#" class="subscribe-link">Subscribe</a> and is activated with Space/Enter to open the menu.</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <h2>Fluffy Cat</h2>
+                <img src="http://placekitten.com/400/498" alt="This is a fluffy cat who is having an enjoyable afternoon time.">
+                <div class="description">
+                    <p>
+                        This is a fluffy cat who is having an enjoyable afternoon time. 
+                    </p>
+                    <p>Tabbing on the hamburger menu is closed does <a href="#" class="subscribe-link">Subscribe</a> NOT select (invisibly) one of the menu links. Instead it selects the next visible link on the page</p>
+                </div>
+                
+                
+            </div>
+            <div class="card">
+                <h2>Beautiful Cat</h2>
+                <img src="http://placekitten.com/250/260" alt="This is a beautiful cat who is looking something obliquely.">
+
+                <div class="description">
+                    <p>
+                        This is a fluffy cat who is having an enjoyable afternoon time.
+                    </p>
+                    <p>
+                        No information should be conveyed <a href="#" class="subscribe-link">Subscribe</a> through color differences only
+                    </p>
+                </div>
+                
+                
+            </div>
+            <div class="card">
+                <h2>Handsome Cat</h2>
+                <img src="http://placekitten.com/199/199" alt="This is a handsome cat who is looking at the lens.">
+
+                <div class="description">
+                    <p>
+                        This is a fluffy cat who is having an enjoyable afternoon time.
+                    </p>
+                    <p>
+                        All form fields should be associated with a <a href="#" class="subscribe-link">Subscribe</a> element that contains useful text
+                    </p>
+                </div>
+                
+                
+            </div>
+        </cards>
+    </main>
+
+    <footer>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Work for us</a>
+        <a href="#">Contact us</a>
+        <a href="#">Social Media</a>
+    </footer>
+    <script src="cats_script.js"></script>
+</body>
+</html>

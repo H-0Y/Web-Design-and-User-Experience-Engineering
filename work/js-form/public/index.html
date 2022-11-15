@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pandahub</title>
+</head>
+<body>
+    <header>
+        <h1>Pandahub</h1>
+    
+        <h2>Registration (all fields with <span>*</span> are reuired) </h2>
+    </header>
+    
+    <main>
+        <form class="register" action="/submit" method="post">
+            <div class="register-username">
+                <label for="username">Username<span>*</span>: </label>
+                <span class="register-username__error">
+                    ( username is required ) 
+                </span>
+                <input class="register-username-input" type="text" name="username" id="username" placeholder="required">
+            </div>
+                
+            <div class="register-email">
+                <label for="email">E-mail<span>*</span>: </label>
+                <span class="register-email__error"></span>
+                <input class="register-email-input" type="text" name="email" id="email" placeholder="required">
+                
+            </div>    
+                
+            <div class="register-confirm">
+                <label for="confirm-email">Confirm E-mail<span>*</span>: </label>
+                <span class="register-confirm__error"></span>
+                <input class="register-confirm-input" type="text" name="confirm-email" id="confirm-email" placeholder="required">
+            </div>
+                
+            <div class="register-tier">
+                <label for=""tier"> Tier<span></span>: </label>
+                <select class="register-tier-select" name="tier" id="tier">
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                    <option selected>Please select one</option>
+                </select>
+            </div>
+                
+            <div class="register-wants-spam">
+                <label for="wants-spam">Do you want spam emails? </label>
+                <input type="checkbox" name="wants-spam" id="wants-spam" checked>
+            </div>
+            <input class="register-submit" type="submit" value="Register">
+        </form>
+    </main>
+
+    <footer>
+        <a href="#">Privacy Policy</a>
+    </footer>
+    
+    <script src="myScript.js"></script>
+</body>
+</html>

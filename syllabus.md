@@ -66,6 +66,7 @@ Thu Oct 13, 11:59pm ET
 Fri Oct 14, 
 Fri Oct 21,
 Fri Oct 28,
+Fri Nov 4, 
 
 - Browser JS Intro
 - Validation
@@ -78,9 +79,8 @@ Thu Nov 3, 11:59pm ET (Due Date may change!)
 
 ### Section 3: React Intro
 
-Fri Nov 4, 
-Thu Nov 11,
-Thu Nov 18, 
+NOT Fri Nov 11 (Holiday)
+Fri Nov 18, 
 NOT Fri Nov 25 (Holiday)
 Fri Dec 2,
 Fri Dec 9

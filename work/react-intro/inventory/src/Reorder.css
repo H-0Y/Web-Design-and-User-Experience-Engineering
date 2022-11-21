@@ -1,0 +1,13 @@
+
+.button {
+    font-weight: bold;
+    animation-name:fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes fade-in
+{
+    0% {opacity: 0;}
+    50% {opacity: 0.4;}
+    100% {opacity: 1;}
+}

@@ -1,0 +1,24 @@
+.home {
+    text-align: center;
+}
+.home-panel {
+    border: 0.2rem solid black;
+    display: flex;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+.home-text {
+    font-size: large;
+    margin: 1rem;
+}
+.home-images{
+    height: 300px;
+    width: 300px;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+.home-link:focus-within,
+.home-link:hover {
+    color: red;
+    background-color: royalblue;
+}

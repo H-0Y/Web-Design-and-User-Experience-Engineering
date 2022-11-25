@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: skyblue;
+}
+
+.footer__list {
+    list-style: none;
+}
+.footer__list a {
+    text-decoration: none;
+}
+.footer__list a:focus-within,
+.footer__list a:hover {
+    color: red;
+    background-color: royalblue;
+    padding: 0.5rem;
+}
+.footer-button {
+    margin: 0.5rem;
+}
+.footer-dark {
+    background-color: brown;
+}

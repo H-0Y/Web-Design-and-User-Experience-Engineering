@@ -1,0 +1,48 @@
+
+.gallery {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    
+    margin: 2rem;
+    gap: 2rem;
+}
+.gallery img {
+    border-radius: 2rem;
+    grid-column: 1/13;
+    height: 300px;
+    width: 300px;
+}
+
+@media (min-width: 44rem){
+    .images img {
+        grid-column: span 4;
+        align-items: center;
+       
+    }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) { 
+    
+    .gallery img {
+        transform-origin: center;
+        transform: perspective(800px) rotateY(20deg);
+        transition: 0.5s;
+    }
+    .images:focus-within img,
+    .images:hover img{
+        opacity: 0.1;
+    }
+    .images img:focus-within,
+    .images img:hover {
+        transform: perspective(800px) rotateY(0deg);
+        opacity: 1;
+    }
+}

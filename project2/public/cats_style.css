@@ -1,0 +1,300 @@
+body {
+    background-color: papayawhip;
+    display: flex;
+    flex-direction: column;
+    height: 959px;
+    margin: 0;
+    min-width: 360px;
+    max-width: 1200px;
+}
+
+header {
+    
+    display: flex;
+    
+    height: 100px;
+    width: 100%;
+    background-color: burlywood;
+}
+
+.skip-link {
+    position: absolute;
+    left: 28%;
+    opacity: 0;
+    font-weight: bold;
+}
+.skip-link--active {
+    
+    opacity: 1;
+    
+}
+.logo {
+    justify-self: start;
+    
+    height: 100px;
+    width: 100px;
+}
+h1{
+    padding-left: 1rem;
+    flex: 17;
+}
+
+/* below CSS adapted from https://css.gg under the MIT License */
+.gg-menu {
+    transform: scale(var(--ggs,1))
+   }
+   
+   .gg-menu,
+   .gg-menu::after,
+   .gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+   }
+   
+   .gg-menu::after,
+   .gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+   }
+   
+   .gg-menu::after {
+    top: 6px
+   } 
+menu {
+    flex: 2;
+    display: initial;
+    
+    padding: 0;
+    padding-right: 4rem;
+    margin: 0;
+    margin-top: 3rem;
+    border: none;
+    background-color: burlywood;
+    
+}
+
+.menu-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    background-color: burlywood;
+    position: absolute;
+    list-style: none;
+    
+    display: none;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition-duration: 1s;
+}
+
+ul li {
+    margin: 0;
+    padding: 0.4rem 0;
+    transition: opacity .1s ease .2s;
+    
+}
+.open {
+    display: initial;
+    transform: rotateX(0deg);
+}
+
+
+li a:hover,
+li a:focus-within {
+    color: #eee;
+    background-color: rgb(84, 205, 245);
+    font-weight: bold;
+    
+}
+
+nav {
+    display: none;
+    padding: 0.5rem 0;
+    
+    justify-content: space-around;
+    width: 100%;
+    background-color: burlywood;
+}
+nav a:hover,
+nav a:focus-within {
+    color: #eee;
+    background-color: rgb(84, 205, 245);
+    font-weight: bold;
+    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    
+}
+.card{
+    margin: 0.5rem;
+    grid-column: 1/13;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    
+    
+    
+    border-radius: 2rem;
+    background-color: gainsboro;;
+    border: solid 0.1rem;
+    
+    font-weight: bold;
+    
+}
+.card:hover{
+    box-shadow: 5px 5px 5px 5px lightcoral;
+}
+.card h2{
+    margin: 0;
+    padding: 0.5rem;
+}
+.card img{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    
+    aspect-ratio: 1/1;
+    
+    height: 200px;
+    width: 200px;
+}
+.card p{
+    line-height: 1.6rem;
+    
+    margin-left: 0.5rem;
+    
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 250px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid black;
+    height: 300px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+}
+span {
+    color: red;
+}
+.form-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.subscribe-submit{
+    padding: 0.5rem;
+    width: 8rem;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    background-color: lime;
+    border-radius: 2rem;
+}
+.close {
+    padding: 0.5rem;
+    border: solid 1.5px;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    background-color: lightcoral;
+    border-radius: 2rem;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}   
+
+footer {
+    flex: 1;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+footer a {
+    width: 20%;
+}
+footer a:hover,
+footer a:focus-within {
+    color: #eee;
+    
+    font-weight: bold;
+    
+}
+
+/* desktop version */
+@media (min-width: 44rem){
+    h1 {
+        margin-left: 25%;
+    }
+    menu {
+        display: none;
+    }
+    .skip-link{
+        left: 35%;
+    }
+    nav{
+        display: flex;
+    }
+    
+    .card {
+        grid-column: span 4;
+        align-items: center;
+        
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer a {
+        width: auto;
+    }
+}

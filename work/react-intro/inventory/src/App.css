@@ -1,0 +1,27 @@
+.app {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.app-desc {
+  font-size: larger;
+  font-weight: bolder;
+}
+.app-main {
+  display: flex;
+  gap: 0.5rem;
+}
+.app-display {
+  font-size: larger;
+}
+
+.app-button{
+  font-weight: bolder;
+}
+
+
+
+
+

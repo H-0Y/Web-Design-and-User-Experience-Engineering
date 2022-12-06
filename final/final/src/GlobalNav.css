@@ -1,0 +1,55 @@
+
+.global-nav__list {
+    position: absolute;
+    display: none;
+    
+    background-color: skyblue;
+    padding: 0;
+    padding-right: 1rem;
+    margin: 0;
+
+    list-style: none;
+}
+.list-dark {
+    background-color: brown;
+}
+.global-nav__list--open {
+    display: flex;
+    flex-direction: column;
+}
+.global-nav__link {
+    display: inline-block;
+
+    padding: 0.5rem 1rem;
+
+    font-size: 1.3rem;
+}
+.global-nav__link:focus-within,
+.global-nav__link:hover {
+    background-color: dodgerblue;
+    color: black;
+}
+
+.global-nav__button{
+    min-width: 54px;
+    min-height: 54px;
+    margin: 0.2rem 1rem;
+}
+
+@media screen and (min-width: 44rem) {
+    .global-nav {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    .global-nav__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position:unset;
+        padding: 0;
+        margin: 0;
+    
+        list-style: none;
+    }
+
+}
